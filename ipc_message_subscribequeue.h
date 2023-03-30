@@ -43,6 +43,6 @@ extern ipc_subscrube_module_t *ipc_subscribe_module_main;
 bool _ipc_run_all_sub_cb(ipc_message_header_t header, uint8_t *data, ipc_subscrube_module_t *mod);
 bool ipc_run_all_sub_cb(ipc_message_header_t header, uint8_t *data);
 bool _ipc_attach_cb(ipc_subscrube_module_t *mod, int message_id, ipc_sub_cb specified_cb);
-
+bool ipc_attach_cb(int message_id, ipc_sub_cb specified_cb);
 void init_ipc_module(void);
 #endif
